@@ -145,4 +145,4 @@ for (let i = 0; i < CONSONANTS.length; i++) {
   result.push(...parsePage(document));
 }
 
-await Deno.writeTextFile('registrars.json', JSON.stringify(result));
+await Deno.writeTextFile('registrars.json', JSON.stringify(result, null, 2)+'\n');
