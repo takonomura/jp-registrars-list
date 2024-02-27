@@ -16,7 +16,11 @@ for (let i = 0; i < CONSONANTS.length; i++) {
 
   log.info(`Downloading ${url} -> ${filename}`);
 
-  const response = await fetch(url);
+  const response = await fetch(url, {
+    headers: {
+      'User-Agent': `jp-registrars-list-downloader/0.1.0 (+https://github.com/takonomura/jp-registrars-list) Deno/${Deno.version.deno}`,
+    },
+  });
   if (response.status != 200) {
     throw new Error(`Unexpected status ${response.status} ${response.statusText}: ${await response.text()}`);
   }
