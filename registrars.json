@@ -1576,51 +1576,6 @@
   },
   {
     "companyName": "アルテリア・ネットワークス株式会社",
-    "serviceName": "Vectant",
-    "serviceURL": "https://www.arteria-net.com",
-    "domains": {
-      "generalUse": true,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": true,
-        "ad": true,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": true
-    },
-    "services": {
-      "registration": false,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "アルテリア・ネットワークス株式会社",
     "serviceName": "UCOM光",
     "serviceURL": "http://business.fttx.co.jp/",
     "domains": {
@@ -1657,6 +1612,51 @@
     "ipv6": {
       "configurable": false,
       "provided": true
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "アルテリア・ネットワークス株式会社",
+    "serviceName": "Vectant",
+    "serviceURL": "https://www.arteria-net.com",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": true,
+        "ad": true,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": true
+    },
+    "services": {
+      "registration": false,
+      "hosting": true
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
     },
     "dnssec": {
       "configurable": false,
@@ -4231,51 +4231,6 @@
   },
   {
     "companyName": "株式会社エーティーワークス",
-    "serviceName": "エーティーワークス　ホスティングサービス",
-    "serviceURL": "http://www.atworks.co.jp/",
-    "domains": {
-      "generalUse": true,
-      "prefectureType": true,
-      "japanesePrefectureType": false,
-      "japanese": true,
-      "organizational": {
-        "ac": true,
-        "ad": false,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
-      },
-      "organizationalPreRegistration": {
-        "ac": true,
-        "ad": false,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": false,
-        "ne": false,
-        "or": true
-      },
-      "geographical": true
-    },
-    "services": {
-      "registration": true,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "株式会社エーティーワークス",
     "serviceName": "ATW インターネットサービス",
     "serviceURL": "https://www.atw.jp",
     "domains": {
@@ -4307,6 +4262,51 @@
     },
     "services": {
       "registration": false,
+      "hosting": true
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "株式会社エーティーワークス",
+    "serviceName": "エーティーワークス　ホスティングサービス",
+    "serviceURL": "http://www.atworks.co.jp/",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": true,
+      "japanesePrefectureType": false,
+      "japanese": true,
+      "organizational": {
+        "ac": true,
+        "ad": false,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
+      },
+      "organizationalPreRegistration": {
+        "ac": true,
+        "ad": false,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": false,
+        "ne": false,
+        "or": true
+      },
+      "geographical": true
+    },
+    "services": {
+      "registration": true,
       "hosting": true
     },
     "ipv6": {
@@ -8281,22 +8281,22 @@
   },
   {
     "companyName": "株式会社QTnet",
-    "serviceName": "データセンター",
-    "serviceURL": "https://www.qtpro.jp/",
+    "serviceName": "QCN",
+    "serviceURL": "https://www.qtnet.co.jp/",
     "domains": {
-      "generalUse": false,
-      "prefectureType": false,
+      "generalUse": true,
+      "prefectureType": true,
       "japanesePrefectureType": false,
-      "japanese": false,
+      "japanese": true,
       "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
+        "ac": true,
+        "ad": true,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
       },
       "organizationalPreRegistration": {
         "ac": false,
@@ -8326,22 +8326,22 @@
   },
   {
     "companyName": "株式会社QTnet",
-    "serviceName": "QCN",
-    "serviceURL": "https://www.qtnet.co.jp/",
+    "serviceName": "データセンター",
+    "serviceURL": "https://www.qtpro.jp/",
     "domains": {
-      "generalUse": true,
-      "prefectureType": true,
+      "generalUse": false,
+      "prefectureType": false,
       "japanesePrefectureType": false,
-      "japanese": true,
+      "japanese": false,
       "organizational": {
-        "ac": true,
-        "ad": true,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
       },
       "organizationalPreRegistration": {
         "ac": false,
@@ -9451,6 +9451,51 @@
   },
   {
     "companyName": "KDDI株式会社",
+    "serviceName": "DOMAIN4U",
+    "serviceURL": "http://www.kddi.com/business/knsl_old/",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": true,
+        "ad": true,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": true
+    },
+    "services": {
+      "registration": false,
+      "hosting": true
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "KDDI株式会社",
     "serviceName": "KDDIインターネット",
     "serviceURL": "http://www.kddi.com/business/internet/index.html",
     "domains": {
@@ -9524,51 +9569,6 @@
         "or": false
       },
       "geographical": false
-    },
-    "services": {
-      "registration": false,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "KDDI株式会社",
-    "serviceName": "DOMAIN4U",
-    "serviceURL": "http://www.kddi.com/business/knsl_old/",
-    "domains": {
-      "generalUse": true,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": true,
-        "ad": true,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": true
     },
     "services": {
       "registration": false,
@@ -10804,51 +10804,6 @@
     "serviceName": "ドメイン名登録サービス",
     "serviceURL": "http://www.cvh.jp/",
     "domains": {
-      "generalUse": true,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": true,
-      "organizational": {
-        "ac": true,
-        "ad": true,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": true
-    },
-    "services": {
-      "registration": true,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "株式会社サイバービジョンホスティング",
-    "serviceName": "ドメイン名登録サービス",
-    "serviceURL": "http://www.cvh.jp/",
-    "domains": {
       "generalUse": false,
       "prefectureType": false,
       "japanesePrefectureType": false,
@@ -10878,6 +10833,51 @@
     "services": {
       "registration": false,
       "hosting": false
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "株式会社サイバービジョンホスティング",
+    "serviceName": "ドメイン名登録サービス",
+    "serviceURL": "http://www.cvh.jp/",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": true,
+      "organizational": {
+        "ac": true,
+        "ad": true,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": true
+    },
+    "services": {
+      "registration": true,
+      "hosting": true
     },
     "ipv6": {
       "configurable": false,
@@ -11704,51 +11704,6 @@
     "serviceName": "CsideNet",
     "serviceURL": "http://www.cside.jp/",
     "domains": {
-      "generalUse": true,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": false
-    },
-    "services": {
-      "registration": true,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "株式会社シーサイドネット",
-    "serviceName": "CsideNet",
-    "serviceURL": "http://www.cside.jp/",
-    "domains": {
       "generalUse": false,
       "prefectureType": false,
       "japanesePrefectureType": false,
@@ -11778,6 +11733,51 @@
     "services": {
       "registration": false,
       "hosting": false
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "株式会社シーサイドネット",
+    "serviceName": "CsideNet",
+    "serviceURL": "http://www.cside.jp/",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": false
+    },
+    "services": {
+      "registration": true,
+      "hosting": true
     },
     "ipv6": {
       "configurable": false,
@@ -12511,51 +12511,6 @@
   },
   {
     "companyName": "GMOインターネットグループ株式会社",
-    "serviceName": "ソリス",
-    "serviceURL": "https://www.solis.jp",
-    "domains": {
-      "generalUse": true,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": true,
-      "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": true,
-        "ed": false,
-        "go": false,
-        "gr": true,
-        "ne": true,
-        "or": true
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": false
-    },
-    "services": {
-      "registration": true,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": true
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "GMOインターネットグループ株式会社",
     "serviceName": "お名前.com",
     "serviceURL": "https://www.onamae.com/",
     "domains": {
@@ -12596,6 +12551,51 @@
     "dnssec": {
       "configurable": true,
       "authoritativeServer": true,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "GMOインターネットグループ株式会社",
+    "serviceName": "ソリス",
+    "serviceURL": "https://www.solis.jp",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": true,
+      "organizational": {
+        "ac": false,
+        "ad": false,
+        "co": true,
+        "ed": false,
+        "go": false,
+        "gr": true,
+        "ne": true,
+        "or": true
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": false
+    },
+    "services": {
+      "registration": true,
+      "hosting": true
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": true
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
       "cacheServer": false
     }
   },
@@ -14446,22 +14446,22 @@
   },
   {
     "companyName": "ソフトバンク株式会社",
-    "serviceName": "オープンデータネットワーク",
+    "serviceName": "",
     "serviceURL": null,
     "domains": {
-      "generalUse": true,
+      "generalUse": false,
       "prefectureType": false,
       "japanesePrefectureType": false,
       "japanese": false,
       "organizational": {
-        "ac": true,
-        "ad": true,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
       },
       "organizationalPreRegistration": {
         "ac": false,
@@ -14473,7 +14473,7 @@
         "ne": false,
         "or": false
       },
-      "geographical": true
+      "geographical": false
     },
     "services": {
       "registration": false,
@@ -14536,22 +14536,22 @@
   },
   {
     "companyName": "ソフトバンク株式会社",
-    "serviceName": "",
+    "serviceName": "オープンデータネットワーク",
     "serviceURL": null,
     "domains": {
-      "generalUse": false,
+      "generalUse": true,
       "prefectureType": false,
       "japanesePrefectureType": false,
       "japanese": false,
       "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
+        "ac": true,
+        "ad": true,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
       },
       "organizationalPreRegistration": {
         "ac": false,
@@ -14563,7 +14563,7 @@
         "ne": false,
         "or": false
       },
-      "geographical": false
+      "geographical": true
     },
     "services": {
       "registration": false,
@@ -18946,51 +18946,6 @@
   },
   {
     "companyName": "有限会社ネットグルーヴワークス",
-    "serviceName": "ミニム",
-    "serviceURL": "http://www.minim.jp/",
-    "domains": {
-      "generalUse": false,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": false
-    },
-    "services": {
-      "registration": false,
-      "hosting": false
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "有限会社ネットグルーヴワークス",
     "serviceName": "ネットグルーヴ ドメイン",
     "serviceURL": "https://www.netgroove.ne.jp",
     "domains": {
@@ -19023,6 +18978,51 @@
     "services": {
       "registration": true,
       "hosting": true
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "有限会社ネットグルーヴワークス",
+    "serviceName": "ミニム",
+    "serviceURL": "http://www.minim.jp/",
+    "domains": {
+      "generalUse": false,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": false
+    },
+    "services": {
+      "registration": false,
+      "hosting": false
     },
     "ipv6": {
       "configurable": false,
@@ -19441,51 +19441,6 @@
   },
   {
     "companyName": "株式会社ハイパーボックス",
-    "serviceName": "ハイパーボックス",
-    "serviceURL": "http://www.hyperbox.co.jp/",
-    "domains": {
-      "generalUse": true,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": true,
-        "ad": false,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": true
-    },
-    "services": {
-      "registration": true,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "株式会社ハイパーボックス",
     "serviceName": "エクストリム",
     "serviceURL": "http://www.extrem.jp/",
     "domains": {
@@ -19518,6 +19473,51 @@
     "services": {
       "registration": false,
       "hosting": false
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "株式会社ハイパーボックス",
+    "serviceName": "ハイパーボックス",
+    "serviceURL": "http://www.hyperbox.co.jp/",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": true,
+        "ad": false,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": true
+    },
+    "services": {
+      "registration": true,
+      "hosting": true
     },
     "ipv6": {
       "configurable": false,
@@ -20026,51 +20026,6 @@
   },
   {
     "companyName": "株式会社日立システムズ",
-    "serviceName": "インターネットデータセンター・アウトソーシングサービス",
-    "serviceURL": "http://www.hitachi-systems.com",
-    "domains": {
-      "generalUse": true,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": false
-    },
-    "services": {
-      "registration": true,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "株式会社日立システムズ",
     "serviceName": "NETFORWARDインターネット接続サービス",
     "serviceURL": "http://www.netforward.or.jp/",
     "domains": {
@@ -20103,6 +20058,51 @@
     "services": {
       "registration": true,
       "hosting": false
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "株式会社日立システムズ",
+    "serviceName": "インターネットデータセンター・アウトソーシングサービス",
+    "serviceURL": "http://www.hitachi-systems.com",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": false
+    },
+    "services": {
+      "registration": true,
+      "hosting": true
     },
     "ipv6": {
       "configurable": false,
@@ -20344,51 +20344,6 @@
     "serviceName": "株式会社ヒューメイア",
     "serviceURL": "https://www.humeia.co.jp/",
     "domains": {
-      "generalUse": true,
-      "prefectureType": true,
-      "japanesePrefectureType": false,
-      "japanese": true,
-      "organizational": {
-        "ac": true,
-        "ad": false,
-        "co": true,
-        "ed": true,
-        "go": true,
-        "gr": true,
-        "ne": true,
-        "or": true
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": true
-    },
-    "services": {
-      "registration": true,
-      "hosting": true
-    },
-    "ipv6": {
-      "configurable": true,
-      "provided": true
-    },
-    "dnssec": {
-      "configurable": true,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "株式会社ヒューメイア",
-    "serviceName": "株式会社ヒューメイア",
-    "serviceURL": "https://www.humeia.co.jp/",
-    "domains": {
       "generalUse": false,
       "prefectureType": false,
       "japanesePrefectureType": false,
@@ -20425,6 +20380,51 @@
     },
     "dnssec": {
       "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "株式会社ヒューメイア",
+    "serviceName": "株式会社ヒューメイア",
+    "serviceURL": "https://www.humeia.co.jp/",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": true,
+      "japanesePrefectureType": false,
+      "japanese": true,
+      "organizational": {
+        "ac": true,
+        "ad": false,
+        "co": true,
+        "ed": true,
+        "go": true,
+        "gr": true,
+        "ne": true,
+        "or": true
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": true
+    },
+    "services": {
+      "registration": true,
+      "hosting": true
+    },
+    "ipv6": {
+      "configurable": true,
+      "provided": true
+    },
+    "dnssec": {
+      "configurable": true,
       "authoritativeServer": false,
       "cacheServer": false
     }
@@ -21556,8 +21556,143 @@
   },
   {
     "companyName": "富士通株式会社",
+    "serviceName": "FENICSネットワークサービス",
+    "serviceURL": "http://fenics.fujitsu.com",
+    "domains": {
+      "generalUse": true,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": false
+    },
+    "services": {
+      "registration": false,
+      "hosting": false
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "富士通株式会社",
+    "serviceName": "FIP-iDC",
+    "serviceURL": "https://www.fujitsu.com/jp/",
+    "domains": {
+      "generalUse": false,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": false
+    },
+    "services": {
+      "registration": false,
+      "hosting": false
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "富士通株式会社",
     "serviceName": "InfoEddy,InfoRyoma,InfoMadonna,InfoSeto",
     "serviceURL": null,
+    "domains": {
+      "generalUse": false,
+      "prefectureType": false,
+      "japanesePrefectureType": false,
+      "japanese": false,
+      "organizational": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "organizationalPreRegistration": {
+        "ac": false,
+        "ad": false,
+        "co": false,
+        "ed": false,
+        "go": false,
+        "gr": false,
+        "ne": false,
+        "or": false
+      },
+      "geographical": false
+    },
+    "services": {
+      "registration": false,
+      "hosting": false
+    },
+    "ipv6": {
+      "configurable": false,
+      "provided": false
+    },
+    "dnssec": {
+      "configurable": false,
+      "authoritativeServer": false,
+      "cacheServer": false
+    }
+  },
+  {
+    "companyName": "富士通株式会社",
+    "serviceName": "Inforyukyu",
+    "serviceURL": "http://www.ryukyu.ad.jp/",
     "domains": {
       "generalUse": false,
       "prefectureType": false,
@@ -21650,141 +21785,6 @@
     "serviceURL": "http://jp.fujitsu.com/group/fks/",
     "domains": {
       "generalUse": false,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": false
-    },
-    "services": {
-      "registration": false,
-      "hosting": false
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "富士通株式会社",
-    "serviceName": "Inforyukyu",
-    "serviceURL": "http://www.ryukyu.ad.jp/",
-    "domains": {
-      "generalUse": false,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": false
-    },
-    "services": {
-      "registration": false,
-      "hosting": false
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "富士通株式会社",
-    "serviceName": "FIP-iDC",
-    "serviceURL": "https://www.fujitsu.com/jp/",
-    "domains": {
-      "generalUse": false,
-      "prefectureType": false,
-      "japanesePrefectureType": false,
-      "japanese": false,
-      "organizational": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "organizationalPreRegistration": {
-        "ac": false,
-        "ad": false,
-        "co": false,
-        "ed": false,
-        "go": false,
-        "gr": false,
-        "ne": false,
-        "or": false
-      },
-      "geographical": false
-    },
-    "services": {
-      "registration": false,
-      "hosting": false
-    },
-    "ipv6": {
-      "configurable": false,
-      "provided": false
-    },
-    "dnssec": {
-      "configurable": false,
-      "authoritativeServer": false,
-      "cacheServer": false
-    }
-  },
-  {
-    "companyName": "富士通株式会社",
-    "serviceName": "FENICSネットワークサービス",
-    "serviceURL": "http://fenics.fujitsu.com",
-    "domains": {
-      "generalUse": true,
       "prefectureType": false,
       "japanesePrefectureType": false,
       "japanese": false,

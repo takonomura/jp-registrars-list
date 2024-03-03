@@ -5,7 +5,53 @@ import * as log from "https://deno.land/std@0.216.0/log/mod.ts";
 
 const isElement = (n: Node): n is Element => n instanceof Element;
 
-function parsePage(document: HTMLDocument) {
+interface Registrar {
+    companyName: string;
+    serviceName: string;
+    serviceURL: string | null;
+    domains: {
+        generalUse: boolean; // 汎用JPドメイン名
+        prefectureType: boolean; // 都道府県型JPドメイン名
+        japanesePrefectureType: boolean; // 日本語の都道府県型JPドメイン名
+        japanese: boolean; // 日本語JPドメイン名
+        organizational: { // 属性型JPドメイン名
+            ac: boolean;
+            ad: boolean;
+            co: boolean;
+            ed: boolean;
+            go: boolean;
+            gr: boolean;
+            ne: boolean;
+            or: boolean;
+        };
+        organizationalPreRegistration: { // 属性型JPドメイン名の組織設立前登録
+            ac: boolean;
+            ad: boolean;
+            co: boolean;
+            ed: boolean;
+            go: boolean;
+            gr: boolean;
+            ne: boolean;
+            or: boolean;
+        };
+        geographical: boolean;
+    };
+    services: {
+      registration: boolean;
+      hosting: boolean;
+    };
+    ipv6: {
+      configurable: boolean;
+      provided: boolean;
+    };
+    dnssec: {
+      configurable: boolean;
+      authoritativeServer: boolean;
+      cacheServer: boolean;
+    };
+};
+
+function parsePage(document: HTMLDocument): Registrar[] {
   const rows = Array.from(document.querySelectorAll('table.tb-sml > tbody')).filter(isElement)
     .map(e => Array.from(e.children)).flat()
     .filter(e => e.nodeName == 'TR');
@@ -84,11 +130,11 @@ function parseColumns(columns: Element[]) {
 
   return {
     domains: {
-      generalUse: v[0] == AVAILABLE_SYMBOL, // 汎用JPドメイン名
-      prefectureType: v[1] == AVAILABLE_SYMBOL || v[1] == JAPANESE_SYMBOL, // 都道府県型JPドメイン名
-      japanesePrefectureType: v[1] == JAPANESE_SYMBOL, // 日本語の都道府県型JPドメイン名
-      japanese: v[2] == AVAILABLE_SYMBOL, // 日本語JPドメイン名
-      organizational: { // 属性型JPドメイン名
+      generalUse: v[0] == AVAILABLE_SYMBOL,
+      prefectureType: v[1] == AVAILABLE_SYMBOL || v[1] == JAPANESE_SYMBOL,
+      japanesePrefectureType: v[1] == JAPANESE_SYMBOL,
+      japanese: v[2] == AVAILABLE_SYMBOL,
+      organizational: {
         ac: v[3]  == AVAILABLE_SYMBOL || v[3]  == PRE_SYMBOL,
         ad: v[4]  == AVAILABLE_SYMBOL || v[4]  == PRE_SYMBOL,
         co: v[5]  == AVAILABLE_SYMBOL || v[5]  == PRE_SYMBOL,
@@ -98,7 +144,7 @@ function parseColumns(columns: Element[]) {
         ne: v[9]  == AVAILABLE_SYMBOL || v[9]  == PRE_SYMBOL,
         or: v[10] == AVAILABLE_SYMBOL || v[10] == PRE_SYMBOL,
       },
-      organizationalPreRegistration: { // 属性型JPドメイン名の組織設立前登録
+      organizationalPreRegistration: {
         ac: v[3]  == PRE_SYMBOL,
         ad: v[4]  == PRE_SYMBOL,
         co: v[5]  == PRE_SYMBOL,
@@ -126,6 +172,64 @@ function parseColumns(columns: Element[]) {
   };
 }
 
+function sortRegistrars(registrars: Registrar[]) {
+  const companyNames = registrars.map(v => v.companyName);
+  const toSortKeys = (v: Registrar) => [
+    companyNames.indexOf(v.companyName),
+    v.serviceName,
+    v.serviceURL,
+
+    v.domains.generalUse,
+    v.domains.prefectureType,
+    v.domains.japanesePrefectureType,
+    v.domains.japanese,
+    v.domains.geographical,
+
+    v.services.registration,
+    v.services.hosting,
+    v.ipv6.configurable,
+    v.ipv6.provided,
+    v.dnssec.configurable,
+    v.dnssec.authoritativeServer,
+    v.dnssec.cacheServer,
+
+    v.domains.organizational.ac,
+    v.domains.organizational.ad,
+    v.domains.organizational.co,
+    v.domains.organizational.ed,
+    v.domains.organizational.go,
+    v.domains.organizational.gr,
+    v.domains.organizational.ne,
+    v.domains.organizational.or,
+
+    v.domains.organizationalPreRegistration.ac,
+    v.domains.organizationalPreRegistration.ad,
+    v.domains.organizationalPreRegistration.co,
+    v.domains.organizationalPreRegistration.ed,
+    v.domains.organizationalPreRegistration.go,
+    v.domains.organizationalPreRegistration.gr,
+    v.domains.organizationalPreRegistration.ne,
+    v.domains.organizationalPreRegistration.or,
+  ];
+  registrars.sort((a, b) => {
+    const aKeys = toSortKeys(a);
+    const bKeys = toSortKeys(b);
+
+    for (let i = 0; i < aKeys.length; i++) {
+      const aKey = aKeys[i];
+      const bKey = bKeys[i];
+
+      if (aKey! < bKey!) {
+        return -1;
+      }
+      if (aKey! > bKey!) {
+        return 1;
+      }
+    }
+    return 0;
+  });
+}
+
 const CONSONANTS = ['', 'k', 's', 't', 'n', 'h', 'm', 'y', 'r', 'w'];
 
 const parser = new DOMParser();
@@ -144,5 +248,7 @@ for (let i = 0; i < CONSONANTS.length; i++) {
 
   result.push(...parsePage(document));
 }
+
+sortRegistrars(result);
 
 await Deno.writeTextFile('registrars.json', JSON.stringify(result, null, 2)+'\n');
